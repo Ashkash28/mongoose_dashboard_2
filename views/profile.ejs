@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Profile</title>
+	</head>
+	<body>
+		<h1>Here is <%= mongoose.name %>'s profile</h1>
+		<p>he or she is <%=mongoose.age %> years old</p>
+		<a href="/mongooses/<%=mongoose.id%>/edit">Edit</a>
+		<form action="/mongooses/<%=mongoose.id%>/destroy" method="post">
+			<input type="submit" value="Destroy">
+		</form>
+
+	</body>
+</html>
